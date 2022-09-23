@@ -182,8 +182,8 @@ const Playground = () => {
   }, [playgroundColors]);
 
   const [avatarSize, setAvatarSize] = useState(avatarSizes.medium);
-  const [variant, setVariant] = useState(variants.beam);
-  const [isSquare, setSquare] = useState(false);
+  const [variant, setVariant] = useState(variants.bauhaus);
+  const [isSquare, setSquare] = useState(true);
 
   return (
     <>
@@ -230,7 +230,7 @@ const Playground = () => {
           <AvatarWrapper
             key={name}
             size={avatarSize}
-            square={isSquare}
+            square={true}
             name={exampleName}
             playgroundColors={filteredColors}
             variant={variant}

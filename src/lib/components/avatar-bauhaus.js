@@ -38,6 +38,26 @@ const AvatarBauhaus = (props) => {
       <g mask="url(#mask__bauhaus)">
         <rect width={SIZE} height={SIZE * 2} fill={properties[0].color} />
         <rect
+          x={(SIZE - 20) / 2}
+          y={(SIZE - 60) / 2}
+          width={SIZE}
+          height={properties[1].isSquare ? SIZE : SIZE / 12}
+          fill={properties[4].color}
+          transform={
+            'translate(' +
+            properties[1].translateY +
+            ' ' +
+            properties[1].translateX +
+            ') rotate(' +
+            properties[1].rotate +
+            ' ' +
+            SIZE / 1.5 +
+            ' ' +
+            SIZE / 1.5 +
+            ')'
+          }
+        />
+        <rect
           x={(SIZE - 60) / 2}
           y={(SIZE - 20) / 2}
           width={SIZE}
