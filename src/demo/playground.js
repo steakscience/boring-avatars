@@ -91,6 +91,8 @@ const AvatarWrapper = ({ name, playgroundColors, size, square, variant }) => {
           size={size}
           variant={variants[variant]}
           square={square}
+          width={80}
+          height={160}
         />
       </AvatarSection>
       <Input

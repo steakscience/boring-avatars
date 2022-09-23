@@ -16,10 +16,12 @@ const Avatar = ({
   name = 'Clara Barton',
   square = false,
   title = false,
+  width = 40,
+  height = 80,
   size = 40,
   ...props
 }) => {
-  const avatarProps = { colors, name, title, size, square, ...props };
+  const avatarProps = { colors, name, title, width, height, size, square, ...props };
   const checkedVariant = () => {
     if (Object.keys(deprecatedVariants).includes(variant)) {
       return deprecatedVariants[variant];

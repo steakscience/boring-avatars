@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { hashCode, getUnit, getRandomColor, getBoolean } from '../utilities';
 
-const ELEMENTS = 4;
+const ELEMENTS = 8;
 const SIZE = 80;
 
 function generateColors(name, colors) {
@@ -28,15 +28,15 @@ const AvatarBauhaus = (props) => {
       fill="none"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
-      width={props.size}
-      height={props.size}
+      width={props.width}
+      height={props.height}
     >
       {props.title && <title>{props.name}</title>}
-      <mask id="mask__bauhaus" maskUnits="userSpaceOnUse" x={0} y={0} width={SIZE} height={SIZE}>
-        <rect width={SIZE} height={SIZE} rx={props.square ? undefined : SIZE * 2} fill="#FFFFFF" />
+      <mask id="mask__bauhaus" maskUnits="userSpaceOnUse" x={0} y={0} width={SIZE} height={SIZE * 2}>
+        <rect width={SIZE} height={SIZE * 2} rx={props.square ? undefined : SIZE * 2} fill="#FFFFFF" />
       </mask>
       <g mask="url(#mask__bauhaus)">
-        <rect width={SIZE} height={SIZE} fill={properties[0].color} />
+        <rect width={SIZE} height={SIZE * 2} fill={properties[0].color} />
         <rect
           x={(SIZE - 60) / 2}
           y={(SIZE - 20) / 2}
