@@ -148,16 +148,18 @@ const SizeDot = ({ size, isSelected, ...props }) => {
 };
 
 const variants = {
-  beam: 'beam',
+  // beam: 'beam',
   bauhaus: 'bauhaus',
-  ring: 'ring',
-  sunset: 'sunset',
-  pixel: 'pixel',
-  marble: 'marble',
+  // ring: 'ring',
+  // sunset: 'sunset',
+  // pixel: 'pixel',
+  // marble: 'marble',
 };
 
 const Playground = () => {
-  const defaultPlaygroundColors = paletteColors[493];
+  // gray-50, 100, 200, 300, 400
+  const grays = ["#F9FAFB", "#F2F4F7", "#EAECF0", "#D0D5DD", "#98A2B3"];
+  const defaultPlaygroundColors = grays;
   const [playgroundColors, setPlaygroundColors] = useState(defaultPlaygroundColors);
 
   const [darkMode, setDarkMode] = useState(false);
