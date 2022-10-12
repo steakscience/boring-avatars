@@ -157,8 +157,8 @@ const variants = {
 };
 
 const Playground = () => {
-  // gray-50, 100, 200, 300, 400
-  const grays = ["#F9FAFB", "#F2F4F7", "#EAECF0", "#D0D5DD", "#98A2B3"];
+  // gray-25, 50, 100, 200, 300
+  const grays = ["#FCFCFD", "#F9FAFB", "#F2F4F7", "#EAECF0", "#D0D5DD"];
   const defaultPlaygroundColors = grays;
   const [playgroundColors, setPlaygroundColors] = useState(defaultPlaygroundColors);
 
